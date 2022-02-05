@@ -17,3 +17,18 @@ Activating the kraken environment (`conda activate kraken`) gives access to the 
 `conda env create -f environment_cuda.yml`
 
 Note: This also creates an environment with name `kraken`. If you want both environments, edit the `.yml` file to change the environment name (e.g. to `kraken-cuda`).
+
+## Usage Instructions
+
+Activate the Kraken Conda environment and then run:
+
+`kraken -i "IMAGE_FILENAME" OUTPUT_FILENAME binarize segment ocr -m MODEL_FILENAME`
+
+Using the following values:
+* IMAGE_FILENAME: Use the filename of the image you want to perform OCR on.
+* OUTPUT_FILENAME: Filename of text file to write output to
+* MODEL_FILENAME: Should point to the model file you want to use in `model/`
+
+## Fine-Tuning Model
+
+For instructions on fine-tuning the existing model on new data, see `Finetuning.md`.
