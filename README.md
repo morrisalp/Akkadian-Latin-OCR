@@ -29,6 +29,8 @@ Using the following values:
 * OUTPUT_FILENAME: Filename of text file to write output to
 * MODEL_FILENAME: Should point to the model file you want to use in `models/`
 
+**Note:** In the output text, we use a single left curly brace { to indicate a superscript, which is significant in the common transliteration of Akkadian. We recommend to post-process by adding } after every character which is preceeded by {. For example, "{dAMAR.UTU" should be converted to "{d}AMAR.UTU".
+
 ## Models
 
 The `models/` folder contains fine-tuned OCR models. We recommend `model.mlmodel` for general use. `dillard.mlmodel` was fine-tuned on typewriter text in Dillard (1975) and might perform better in that use case.
