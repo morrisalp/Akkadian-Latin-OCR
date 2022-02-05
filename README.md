@@ -27,7 +27,15 @@ Activate the Kraken Conda environment and then run:
 Using the following values:
 * IMAGE_FILENAME: Use the filename of the image you want to perform OCR on.
 * OUTPUT_FILENAME: Filename of text file to write output to
-* MODEL_FILENAME: Should point to the model file you want to use in `model/`
+* MODEL_FILENAME: Should point to the model file you want to use in `models/`
+
+## Models
+
+The `models/` folder contains fine-tuned OCR models. We recommend `model.mlmodel` for general use. `dillard.mlmodel` was fine-tuned on typewriter text in Dillard (1975) and might perform better in that use case.
+
+## Tests
+
+In `tests/`, we have provided a sample paragraph (`test.png`, from Dietrich 2003) and OCR results of the default model in `output.txt`. You may run OCR on it and verify that you get the same output.
 
 ## Fine-Tuning Model
 
